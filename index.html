@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L.S EN GNM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>L.S EN GNM - Aprendizaje en Lengua de Señas</h1>
+    <h3 >Melanie Cervera | Sara Bolivar</a></h3></b>
+
+    <div style="margin: 20px;">
+      <button id="start-quiz" onclick="startQuiz();">Iniciar Quiz</button>
+    </div>
+
+    <header>
+      <nav>
+        <ul class="menu">
+          <li data-category="abc">ABC</li>
+          <li data-category="interacciones">Interacciones</li>
+          <li data-category="familia">Familia</li>
+          <li data-category="comida">Comida</li>
+          <li data-category="colores">Colores</li>
+          <li data-category="objetos">Objetos</li>
+          <li data-category="actividades">Actividades</li>
+          <li data-category="animales">Animales</li>
+          <li data-category="emociones">Emociones</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="image-container">
+      <div class="category abc">
+        <img src="images/abc/a.jpg" alt="ABC Image a" style="cursor: default;">
+        <img src="images/abc/b.jpg" alt="ABC Image b" style="cursor: default;">
+        <img src="images/abc/c.jpg" alt="ABC Image c" style="cursor: default;">
+        <img src="images/abc/d.jpg" alt="ABC Image d" style="cursor: default;">
+        <img src="images/abc/e.jpg" alt="ABC Image e" style="cursor: default;">
+        <img src="images/abc/f.jpg" alt="ABC Image f" style="cursor: default;">
+        <img src="images/abc/g.jpg" alt="ABC Image g" style="cursor: default;">
+        <img src="images/abc/h.jpg" alt="ABC Image h" style="cursor: default;">
+        <img src="images/abc/i.jpg" alt="ABC Image i" style="cursor: default;">
+        <img src="images/abc/j.jpg" alt="ABC Image j" style="cursor: default;">
+        <img src="images/abc/k.jpg" alt="ABC Image k" style="cursor: default;">
+        <img src="images/abc/l.jpg" alt="ABC Image l" style="cursor: default;">
+        <img src="images/abc/m.jpg" alt="ABC Image m" style="cursor: default;">
+        <img src="images/abc/n.jpg" alt="ABC Image n" style="cursor: default;">
+        <img src="images/abc/nn.jpg" alt="ABC Image nn" style="cursor: default;">
+        <img src="images/abc/o.jpg" alt="ABC Image o" style="cursor: default;">
+        <img src="images/abc/p.jpg" alt="ABC Image p" style="cursor: default;">
+        <img src="images/abc/q.jpg" alt="ABC Image q" style="cursor: default;">
+        <img src="images/abc/r.jpg" alt="ABC Image r" style="cursor: default;">
+        <img src="images/abc/s.jpg" alt="ABC Image s" style="cursor: default;">
+        <img src="images/abc/t.jpg" alt="ABC Image t" style="cursor: default;">
+        <img src="images/abc/u.jpg" alt="ABC Image u" style="cursor: default;">
+        <img src="images/abc/v.jpg" alt="ABC Image v" style="cursor: default;">
+        <img src="images/abc/w.jpg" alt="ABC Image w" style="cursor: default;">
+        <img src="images/abc/x.jpg" alt="ABC Image x" style="cursor: default;">
+        <img src="images/abc/y.jpg" alt="ABC Image y" style="cursor: default;">
+        <img src="images/abc/z.jpg" alt="ABC Image z" style="cursor: default;">
+      </div>
+      <div class="category interacciones">
+        <span class="item" onclick="showPopup('videos/interacciones/buenosdias.mov');">Buenos días</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/buenasnoches.mov');">Buenas noches</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/comoestas.mov');">¿Cómo estás?</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/denada.mov');">De nada</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/gracias.mov');">Gracias</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/mellamo.mov');">Me llamo</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/perdon.mov');">Perdón</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/interacciones/porfavor.mov');">Por favor</span>
+      </div>
+      <div class="category familia">
+        <span class="item" onclick="showPopup('videos/familia/papa.mov');">Papá</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/mama.mov');">Mamá</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/abuela.mov');">Abuela</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/abuelo.mov');">Abuelo</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/hermana.mov');">Hermana</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/hermano.mov');">Hermano</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/hija.mov');">Hija</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/hijo.mov');">Hijo</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/tia.mov');">Tia</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/familia/tio.mov');">Tio</span>
+      </div>
+      <div class="category comida">
+        <img src="images/comida/agua.jpg" alt="Agua" data-video="videos/comida/agua.mov">
+        <img src="images/comida/arroz.jpg" alt="Arroz" data-video="videos/comida/arroz.mov">
+        <img src="images/comida/banano.jpg" alt="Banano" data-video="videos/comida/banano.mov">
+        <img src="images/comida/cebolla.jpg" alt="Cebolla" data-video="videos/comida/cebolla.mov">
+        <img src="images/comida/leche.jpg" alt="Leche" data-video="videos/comida/leche.mov">
+        <img src="images/comida/manzana.jpg" alt="Manzana" data-video="videos/comida/manzana.mov">
+        <img src="images/comida/naranja.jpg" alt="Naranja" data-video="videos/comida/naranja.mov">
+        <img src="images/comida/pan.jpg" alt="Pan" data-video="videos/comida/pan.mov">
+        <img src="images/comida/queso.jpg" alt="Queso" data-video="videos/comida/queso.mov">
+      </div>
+      <div class="category colores">
+        <img src="images/colores/amarillo.jpg" alt="Amarillo" data-video="videos/colores/amarillo.mov">
+        <img src="images/colores/azul.jpg" alt="Azul" data-video="videos/colores/azul.mov">
+        <img src="images/colores/rojo.jpg" alt="Rojo" data-video="videos/colores/rojo.mov">
+        <img src="images/colores/blanco.jpg" alt="Blanco" data-video="videos/colores/blanco.mov">
+        <img src="images/colores/marron.jpg" alt="Marrón" data-video="videos/colores/marron.mov">
+        <img src="images/colores/naranja.jpg" alt="Naranja" data-video="videos/colores/naranja.mov">
+        <img src="images/colores/morado.jpg" alt="Morado" data-video="videos/colores/morado.mov">
+        <img src="images/colores/rosado.jpg" alt="Rosado" data-video="videos/colores/rosado.mov">
+        <img src="images/colores/verde.jpg" alt="Verde" data-video="videos/colores/verde.mov">
+        <img src="images/colores/negro.jpg" alt="Negro" data-video="videos/colores/negro.mov">
+      </div>
+      <div class="category objetos">
+        <img src="images/objetos/borrador.jpg" alt="Borrador" data-video="videos/objetos/borrador.mov">
+        <img src="images/objetos/cama.jpg" alt="Cama" data-video="videos/objetos/cama.mov">
+        <img src="images/objetos/carro.jpg" alt="Carro" data-video="videos/objetos/carro.mov">
+        <img src="images/objetos/casa.jpg" alt="Casa" data-video="videos/objetos/casa.mov">
+        <img src="images/objetos/celular.jpg" alt="Celular" data-video="videos/objetos/celular.mov">
+        <img src="images/objetos/lampara.jpg" alt="Lampara" data-video="videos/objetos/lampara.mov">
+        <img src="images/objetos/lapiz.jpg" alt="Lapiz" data-video="videos/objetos/lapiz.mov">
+        <img src="images/objetos/mesa.jpg" alt="Mesa" data-video="videos/objetos/mesa.mov">
+        <img src="images/objetos/silla.jpg" alt="Silla" data-video="videos/objetos/silla.mov">
+        <img src="images/objetos/tablero.jpg" alt="Tablero" data-video="videos/objetos/tablero.mov">
+      </div>
+      <div class="category actividades">
+        <span class="item" onclick="showPopup('videos/actividades/caminar.mov');">Caminar</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/comer.mov');">Comer</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/correr.mov');">Correr</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/entrar.mov');">Entrar</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/estudiar.mov');">Estudiar</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/hacer.mov');">Hacer</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/jugar.mov');">Jugar</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/mirar.mov');">Mirar</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/respirar.mov');">Respirar</span>
+        <br />
+        <span class="item" onclick="showPopup('videos/actividades/trabajar.mov');">Trabajar</span>
+      </div>
+      <div class="category animales">
+        <img src="images/animales/abeja.jpg" alt="Abeja" data-video="videos/animales/abeja.mov">
+        <img src="images/animales/arana.jpg" alt="Araña" data-video="videos/animales/arana.mov">
+        <img src="images/animales/ballena.jpg" alt="Ballena" data-video="videos/animales/ballena.mov">
+        <img src="images/animales/caballo.jpg" alt="Caballo" data-video="videos/animales/caballo.mov">
+        <img src="images/animales/cerdo.jpg" alt="Cerdo" data-video="videos/animales/cerdo.mov">
+        <img src="images/animales/cocodrilo.jpg" alt="Cocodrilo" data-video="videos/animales/cocodrilo.mov">
+        <img src="images/animales/conejo.jpg" alt="Conejo" data-video="videos/animales/conejo.mov">
+        <img src="images/animales/elefante.jpg" alt="Elefante" data-video="videos/animales/elefante.mov">
+        <img src="images/animales/gato.jpg" alt="Gato" data-video="videos/animales/gato.mov">
+        <img src="images/animales/hormiga.jpg" alt="Hormiga" data-video="videos/animales/hormiga.mov">
+        <img src="images/animales/leon.jpg" alt="León" data-video="videos/animales/leon.mov">
+        <img src="images/animales/mariposa.jpg" alt="Mariposa" data-video="videos/animales/mariposa.mov">
+        <img src="images/animales/mono.jpg" alt="Mono" data-video="videos/animales/mono.mov">
+        <img src="images/animales/mosca.jpg" alt="Mosca" data-video="videos/animales/mosca.mov">
+        <img src="images/animales/pajaro.jpg" alt="Pajaro" data-video="videos/animales/pajaro.mov">
+        <img src="images/animales/perro.jpg" alt="Perro" data-video="videos/animales/perro.mov">
+        <img src="images/animales/pez.jpg" alt="Pez" data-video="videos/animales/pez.mov">
+        <img src="images/animales/raton.jpg" alt="Ratón" data-video="videos/animales/raton.mov">
+        <img src="images/animales/serpiente.jpg" alt="Serpiente" data-video="videos/animales/serpiente.mov">
+        <img src="images/animales/tortuga.jpg" alt="Tortuga" data-video="videos/animales/tortuga.mov">
+        <img src="images/animales/vaca.jpg" alt="Vaca" data-video="videos/animales/vaca.mov">
+      </div>
+      <div class="category emociones">
+        <img src="images/emociones/aburrido.jpg" alt="Aburrido" data-video="videos/emociones/aburrido.mov">
+        <img src="images/emociones/alegria.jpg" alt="Alegria" data-video="videos/emociones/alegria.mov">
+        <img src="images/emociones/amor.jpg" alt="Amor" data-video="videos/emociones/amor.mov">
+        <img src="images/emociones/ira.jpg" alt="Ira" data-video="videos/emociones/ira.mov">
+        <img src="images/emociones/miedo.jpg" alt="Miedo" data-video="videos/emociones/miedo.mov">
+        <img src="images/emociones/sorpresa.jpg" alt="Sorpresa" data-video="videos/emociones/sorpresa.mov">
+        <img src="images/emociones/tristeza.jpg" alt="Tristeza" data-video="videos/emociones/tristeza.mov">
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup">
+    <div class="popup-content">
+      <video class="popup-video" controls></video>
+      <span class="close-btn">&times;</span>
+    </div>
+  </div>
+
+  <div class="popup-quiz">
+    <div id="quiz" class="popup-quiz-content">
+      <h2 style="color: black;">Quiz</h2>
+      <!--<h3 style="color: black;">Puntos <span>0</span>/3</h3>-->
+
+      <div class="question">
+        <label for="q1">Video 1</label>
+        <select id="q1">
+          <option disabled selected value> -- select an option -- </option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="q2">Video 2</label>
+        <select id="q2">
+          <option disabled selected value> -- select an option -- </option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="q3">Video 3</label>
+        <select id="q3">
+          <option disabled selected value> -- select an option -- </option>
+        </select>
+      </div>
+      <button id="validate-responses" onclick="validateResponses();">Validar respuestas</button>
+
+      <br /><br />
+
+      <div id="quiz-videos"></div>
+
+      <span class="close-quiz">&times;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
